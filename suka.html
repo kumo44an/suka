@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ПОСОСИ</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10vw;
+      font-weight: bold;
+      font-family: sans-serif;
+      transition: background-color 0.5s linear, color 0.5s linear;
+    }
+
+    .white-bg {
+      background-color: white;
+      color: black;
+    }
+
+    .black-bg {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="black-bg">
+  ПОСОСИ
+
+  <script>
+    let isBlack = true;
+    setInterval(() => {
+      document.body.className = isBlack ? 'white-bg' : 'black-bg';
+      isBlack = !isBlack;
+    }, 1000); // смена каждые 1000 миллисекунд (1 секунда)
+  </script>
+</body>
+</html>
